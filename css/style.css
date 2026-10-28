@@ -7,7 +7,7 @@
    =================================================================== */
 
 :root {
-  --accent:      #afd69b;  /* buttons, bars, links */
+  --accent:      #a6dbbc;  /* buttons, bars, links */
   --accent-dark: #235539;   /* hover state */
   --ink:         #1c1c1c;   /* body text */
   --ink-muted:   #5f6b66;   /* captions, secondary text */
