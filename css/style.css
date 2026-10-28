@@ -12,7 +12,7 @@
   --ink:         #1c1c1c;   /* body text */
   --ink-muted:   #5f6b66;   /* captions, secondary text */
   --paper:       #f7f6f2;   /* page background */
-  --card:        #a6dbbc;   /* card background */
+  --card:        #ffffff;   /* card background */
   --line:        #e2e0da;   /* borders */
   --radius:      10px;
 }
