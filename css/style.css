@@ -12,8 +12,8 @@
   --ink:         #1c1c1c;   /* body text */
   --ink-muted:   #1c1c1c;   /* captions, secondary text */
   --paper:       #428a91;   /* page background */
-  --card:        #ffffff;   /* card background */
-  --line:        #e2e0da;   /* borders */
+  --card:        #aecdc7;   /* card background */
+  --line:        #2d626a;   /* borders */
   --radius:      10px;
 }
 
