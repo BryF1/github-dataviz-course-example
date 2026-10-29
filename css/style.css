@@ -9,7 +9,7 @@
 :root {
   --accent:      #a6dbbc;  /* buttons, bars, links */
   --accent-dark: #235539;   /* hover state */
-  --ink:         #f0f1c7;   /* body text */
+  --ink:         #1c1c1c;   /* body text */
   --ink-muted:   #6f9c97;   /* captions, secondary text */
   --paper:       #428a91;   /* page background */
   --card:        #ffffff;   /* card background */
