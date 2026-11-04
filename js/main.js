@@ -119,3 +119,4 @@ sortButton.addEventListener("click", function () {
    ------------------------------------------------------------------- */
 
 console.log("main.js loaded. The chart has " + coffeeData.length + " bars.");
+$('#box').hide().delay(500).fadein(1500);

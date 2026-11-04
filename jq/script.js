@@ -1,1 +1,0 @@
-$('#box').hide().delay(500).fadein(1500);
