@@ -119,4 +119,20 @@ sortButton.addEventListener("click", function () {
    ------------------------------------------------------------------- */
 
 console.log("main.js loaded. The chart has " + coffeeData.length + " bars.");
-$('#box').hide().delay(500).fadein(1500);
+;
+
+$(document).ready( function)() {
+
+  function displayTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+    console.log(hours + ":" + minutes + ":" + seconds);
+    $('#hours').css('left', hours);
+    $('#minutes').css('left', minutes);
+    $('#seconds').css('left', seconds);
+  }
+
+  displayTime();
+}
