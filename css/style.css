@@ -238,14 +238,23 @@ code {
   transition: left 0.7s linear;
 }
 
+/* HOUR SQUARE */
 #hours {
-  background-color: red;
+  background-color: #2d626a;
+  width: 100px;
+  height: 100px;
 }
 
+/* MINUTE SQUARE */
 #minutes {
-  background-color: green;
+  background-color: #428a91;
+  width: 75px;
+  height: 75px;
 }
 
+/* SECOND SQUARE */
 #seconds {
-  background-color: blue;
+  background-color: #6f9c97;
+  width: 50px;
+  height: 50px;
 }
