@@ -1,3 +1,5 @@
+console.log("Clock script loaded!");
+
 $(document).ready(function() {
 
   function displayTime() {
@@ -16,7 +18,6 @@ $(document).ready(function() {
   }
 
   displayTime();
-
   setInterval(displayTime, 1000);
 
   $(window).on('resize', displayTime);

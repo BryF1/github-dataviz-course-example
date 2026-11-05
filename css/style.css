@@ -209,11 +209,7 @@ code {
     grid-template-columns: 72px 1fr 36px;
   }
 }
-div {
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
+
 
 #hours {
   background-color: red;
