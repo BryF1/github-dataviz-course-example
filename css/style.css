@@ -226,3 +226,30 @@ div {
 #seconds {
   background-color: blue;
 }
+.clock-track {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.clock-square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  transition: left 0.7s linear;
+}
+
+#hours {
+  background-color: red;
+}
+
+#minutes {
+  background-color: green;
+}
+
+#seconds {
+  background-color: blue;
+}

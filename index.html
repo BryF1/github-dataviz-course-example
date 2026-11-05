@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
   <!-- This is the text that shows up in the browser tab. -->
   <title>Bryan Fajardo Github page</title>
@@ -28,10 +28,19 @@
     <!-- ============================================
          SECTION 1: Plain HTML + CSS
          ============================================ -->
+
     <section class="card">
-      <div id="hours"></div>
-  <div id="minutes"></div>
-  <div id="seconds"></div>
+      <div class="clock-track">
+     <div id="hours" class="clock-square"></div>
+   </div>
+
+  <div class="clock-track">
+  <div id="minutes" class="clock-square"></div>
+</div>
+
+  <div class="card">
+  <div id="seconds" class="clock-square"></div>
+</div>
 
     </section>
     <section class="card">
@@ -105,7 +114,8 @@
 
   <!-- Load the JavaScript LAST, so the HTML above already exists
        by the time the script runs. -->
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

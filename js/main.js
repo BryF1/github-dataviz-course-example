@@ -121,20 +121,3 @@ sortButton.addEventListener("click", function () {
 console.log("main.js loaded. The chart has " + coffeeData.length + " bars.");
 ;
 
-$(document).ready( function)() {
-
-  function displayTime() {
-    var currentTime = new Date();
-    var hours = currentTime.getHours();
-    var minutes = currentTime.getMinutes();
-    var seconds = currentTime.getSeconds();
-    var w = window.innerWidth - 100;
-    console.log(hours + ":" + minutes + ":" + seconds);
-    $('#hours').css('left', hours * (w/23));
-    $('#minutes').css('left', minutes * (w/60));
-    $('#seconds').css('left', seconds * (w/60));
-  }
-
-  displayTime();
-  setInterval(displayTime, 1000);
-}
