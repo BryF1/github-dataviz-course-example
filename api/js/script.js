@@ -6,7 +6,11 @@ $(document).ready(function() {
   function getGIFS(value) {
     console.log(value);
     var key = "x0Etx6oBTPDB0cDlzIoj3uYct0wFkryr";
-    var url = "https://api.giphy.com/v1/gifs/search?api_key=" + key + "&q=" + value + "&limit=25&offset=0&rating=G&lang=en"; 
+    var url = "https://api.giphy.com/v1/gifs/search?api_key=" + key + "&q=" + value + "&limit=25&offset=0&rating=G&lang=en";
+
+    $.getJSON(url, function(json) {
+      console.log(json);
+    }) 
   } 
 
   $("#search").keypress(function(e) {
