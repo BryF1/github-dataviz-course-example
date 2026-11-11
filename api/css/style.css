@@ -1,0 +1,260 @@
+/* ===================================================================
+   style.css
+   Styles for the GitHub Pages starter project.
+
+   CSS custom properties ("variables") are defined once here and reused
+   everywhere below. Change a value here and it updates the whole page.
+   =================================================================== */
+
+:root {
+  --accent:      #a6dbbc;  /* buttons, bars, links */
+  --accent-dark: #235539;   /* hover state */
+  --ink:         #1c1c1c;   /* body text */
+  --ink-muted:   #1c1c1c;   /* captions, secondary text */
+  --paper:       #428a91;   /* page background */
+  --card:        #aecdc7;   /* card background */
+  --line:        #2d626a;   /* borders */
+  --radius:      10px;
+}
+
+/* ------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: var(--paper);
+}
+
+/* Keep the content from stretching too wide on large monitors. */
+header,
+main,
+footer {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2 {
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background-color: #ca0adf;
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+}
+
+/* ------------------------------------------------------------------
+   Header and footer
+   ------------------------------------------------------------------ */
+
+.site-header {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: var(--ink-muted);
+  margin-bottom: 0;
+}
+
+.site-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------
+   Cards
+   ------------------------------------------------------------------ */
+
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.caption {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------
+   Buttons
+   ------------------------------------------------------------------ */
+
+.button {
+  font: inherit;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.button:hover {
+  background-color: var(--accent-dark);
+}
+
+.button-secondary {
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+}
+
+.button-secondary:hover {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+.counter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.counter-output {
+  color: var(--ink-muted);
+}
+
+/* ------------------------------------------------------------------
+   Bar chart
+
+   Each row is a grid: a fixed-width label, then the bar, then the value.
+   The bar's WIDTH is set by JavaScript as an inline style.
+   ------------------------------------------------------------------ */
+
+.chart-controls {
+  margin-bottom: 1.1rem;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 42px;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bar-label {
+  font-size: 0.9rem;
+  text-align: right;
+  color: var(--ink-muted);
+}
+
+.bar {
+  height: 22px;
+  border-radius: 3px;
+  background-color: var(--accent);
+  /* Animate width changes so re-sorting feels smooth. */
+  transition: width 0.4s ease;
+}
+
+.bar-value {
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------------
+   Small screens
+   ------------------------------------------------------------------ */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .bar-row {
+    grid-template-columns: 72px 1fr 36px;
+  }
+}
+
+
+#hours {
+  background-color: red;
+}
+
+#minutes {
+  background-color: green;
+}
+
+#seconds {
+  background-color: blue;
+}
+.clock-track {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.clock-square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  transition: left 0.7s linear;
+}
+
+/* HOUR SQUARE */
+#hours {
+  background-color: #2d626a;
+  width: 100px;
+  height: 100px;
+}
+
+/* MINUTE SQUARE */
+#minutes {
+  background-color: #428a91;
+  width: 75px;
+  height: 75px;
+}
+
+/* SECOND SQUARE */
+#seconds {
+  background-color: #6f9c97;
+  width: 50px;
+  height: 50px;
+}
