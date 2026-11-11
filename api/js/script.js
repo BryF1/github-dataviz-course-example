@@ -9,7 +9,7 @@ $(document).ready(function() {
   function getGIFS(value) {
     console.log("Searching for:", value);
 
-    var key = "YOUR_GIPHY_API_KEY";
+    var key = "x0Etx6oBTPDB0cDlzIoj3uYct0wFkryr";
     var url = "https://api.giphy.com/v1/gifs/search?api_key=" + key + "&q=" + encodeURIComponent(value) + "&limit=25&offset=0&rating=g&lang=en";
 
     $.getJSON(url, function(json) {
