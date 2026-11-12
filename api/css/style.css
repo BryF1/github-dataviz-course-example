@@ -211,50 +211,10 @@ code {
 }
 
 
-#hours {
-  background-color: red;
-}
-
-#minutes {
-  background-color: green;
-}
-
-#seconds {
-  background-color: blue;
-}
-.clock-track {
+div {
   position: relative;
-  width: 100%;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-.clock-square {
-  position: absolute;
   width: 100px;
   height: 100px;
-  left: 0;
-  top: 0;
-  transition: left 0.7s linear;
-}
-
-/* HOUR SQUARE */
-#hours {
-  background-color: #2d626a;
-  width: 100px;
-  height: 100px;
-}
-
-/* MINUTE SQUARE */
-#minutes {
-  background-color: #428a91;
-  width: 75px;
-  height: 75px;
-}
-
-/* SECOND SQUARE */
-#seconds {
-  background-color: #6f9c97;
-  width: 50px;
-  height: 50px;
+  background-position: cover;
+  background-repeat: no-repeat;
 }
