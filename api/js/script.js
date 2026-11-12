@@ -16,7 +16,7 @@ $(document).ready(function() {
       console.log("GIPHY API response:", json);
       console.log(json.data[0].images.downsized_large.url);
       var img = json.data[0].images.downsized_large.url;
-      $("main").append('<div style="background-image: url("' + + '")></div>');
+      $("main").append('<div style="background-image: url(' + img + ')"></div>');
     }).fail(function(xhr, status, error) {
       console.log("API Error:", xhr.status, status, error);
       console.log(xhr.responseText);
