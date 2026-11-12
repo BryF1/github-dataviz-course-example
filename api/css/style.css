@@ -211,11 +211,78 @@ code {
 }
 
 
-div {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background-position: cover;
-  background-repeat: no-repeat;
-  float: left;
+/* GIF search and single-GIF viewer */
+#search {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.gif-viewer { width: 100%; }
+
+.gif-frame {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #173f43;
+  border-radius: var(--radius);
+}
+
+#gif-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Fit entire GIF, without cropping or stretching */
+}
+
+#gif-image[hidden] { display: none; }
+
+#gif-message {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.gif-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gif-controls button {
+  padding: 0.6rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  background: var(--accent);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.gif-controls button:hover:not(:disabled) {
+  background: var(--accent-dark);
+  color: white;
+}
+
+.gif-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+#gif-count { white-space: nowrap; }
+
+@media (max-width: 480px) {
+  .gif-frame { height: 260px; }
+  .gif-controls { gap: 0.4rem; }
+  .gif-controls button { padding: 0.5rem; font-size: 0.9rem; }
 }
