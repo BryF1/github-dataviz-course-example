@@ -14,10 +14,11 @@ $(document).ready(function() {
 
     $.getJSON(url, function(json) {
       console.log("GIPHY API response:", json);
+      console.log(json.data[0].images.downsize_larged.url);
     }).fail(function(xhr, status, error) {
       console.log("API Error:", xhr.status, status, error);
       console.log(xhr.responseText);
-      console.log(json.data[0].images.downsize_larged.url);
+     
     });
   }
 
