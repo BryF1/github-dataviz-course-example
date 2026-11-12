@@ -217,4 +217,5 @@ div {
   height: 100px;
   background-position: cover;
   background-repeat: no-repeat;
+  float: left;
 }
