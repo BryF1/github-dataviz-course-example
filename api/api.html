@@ -12,6 +12,7 @@
   <!-- Link to our stylesheet. The path is RELATIVE to this file. -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
  <!-- Navbar -->
 <header class="bg-gray-900 text-white py-4 text-center">
   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -22,11 +23,20 @@
   </div>
 </header>
 
-<body>
   <section class="card">
-  <input id="search" type="text" name="search" placeholder="Search GIFS" />
-  <main></main>
+    <input id="search" type="search" name="search" placeholder="Search GIFs and press Enter" aria-label="Search GIFs" />
+    <main class="gif-viewer">
+      <div class="gif-frame">
+        <img id="gif-image" alt="" hidden>
+        <p id="gif-message" role="status">Search for a GIF to get started.</p>
+      </div>
+      <div class="gif-controls">
+        <button type="button" id="prev-gif" aria-label="Previous GIF" disabled>&larr; Previous</button>
+        <span id="gif-count">0 / 0</span>
+        <button type="button" id="next-gif" aria-label="Next GIF" disabled>Next &rarr;</button>
+      </div>
+    </main>
+  </section>
 
- 
 </body>
 </html>
